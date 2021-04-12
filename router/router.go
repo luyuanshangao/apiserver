@@ -4,9 +4,9 @@ import (
 	"apiserver/handler/sd"
 	"apiserver/handler/user"
 	"apiserver/router/middleware"
+	_ "github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 	"net/http"
-
 )
 
 // Load 加载中间件、路由、处理程序
@@ -25,6 +25,9 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 		})
 		//c.String(http.StatusNotFound, "The incorrect API route.")
 	})
+
+	// pprof router
+	//pprof.Register(g)
 
 	// 用于身份验证功能的api
 	g.POST("/login", user.Login)
