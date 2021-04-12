@@ -67,14 +67,14 @@ func main() {
 	}()
 
 	// Start to listening the incoming requests.
-	cert := viper.GetString("tls.cert")
-	key := viper.GetString("tls.key")
-	if cert != "" && key != "" {
-		go func() {
-			log.Infof("Start to listening the incoming requests on https address: %s", viper.GetString("tls.addr"))
-			log.Info(http.ListenAndServeTLS(viper.GetString("tls.addr"), cert, key, g).Error())
-		}()
-	}
+	//cert := viper.GetString("tls.cert")
+	//key := viper.GetString("tls.key")
+	//if cert != "" && key != "" {
+	//	go func() {
+	//		log.Infof("Start to listening the incoming requests on https address: %s", viper.GetString("tls.addr"))
+	//		log.Info(http.ListenAndServeTLS(viper.GetString("tls.addr"), cert, key, g).Error())
+	//	}()
+	//}
 
 
 	log.Infof("开始侦听http地址上的传入请求: %s", viper.GetString("addr"))
