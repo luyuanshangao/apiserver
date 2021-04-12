@@ -1,8 +1,1 @@
-{"level":"INFO","timestamp":"2021-04-12 14:23:01.879","file":"apiserver/main.go:65","msg":"路由器已成功部署."}
-{"level":"INFO","timestamp":"2021-04-12 14:23:03.919","file":"middleware/logging.go:84","msg":"3.1678ms      | 127.0.0.1    | POST /login | {code: 0, message: OK}"}
-{"level":"INFO","timestamp":"2021-04-12 14:24:57.702","file":"middleware/logging.go:84","msg":"895.7µs       | 127.0.0.1    | POST /v1/user | {code: 20103, message: The token was invalid.}"}
-{"level":"INFO","timestamp":"2021-04-12 14:26:42.854","file":"middleware/logging.go:84","msg":"939.4µs       | 127.0.0.1    | POST /v1/user | {code: 10002, message: Error occurred while binding the request body to the struct.}"}
-{"level":"INFO","timestamp":"2021-04-12 14:31:29.153","file":"middleware/logging.go:84","msg":"33.8512ms     | 127.0.0.1    | GET /v1/user | {code: 10001, message: Error 1146: Table 'db_apiserver.tb_users' doesn't exist}"}
-{"level":"INFO","timestamp":"2021-04-12 14:31:52.334","file":"middleware/logging.go:84","msg":"3.143ms       | 127.0.0.1    | GET /v1/user | {code: 10001, message: Error 1146: Table 'db_apiserver.tb_users' doesn't exist}"}
-{"level":"INFO","timestamp":"2021-04-12 14:32:07.576","file":"middleware/logging.go:84","msg":"2.572ms       | 127.0.0.1    | GET /v1/user | {code: 10001, message: Error 1146: Table 'db_apiserver.tb_users' doesn't exist}"}
-{"level":"INFO","timestamp":"2021-04-12 14:32:19.632","file":"middleware/logging.go:84","msg":"2.4884ms      | 127.0.0.1    | GET /v1/user | {code: 10001, message: Error 1146: Table 'db_apiserver.tb_users' doesn't exist}"}
+{"level":"INFO","timestamp":"2021-04-12 14:55:14.027","file":"apiserver/main.go:65","msg":"路由器已成功部署."}
