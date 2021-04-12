@@ -1,7 +1,6 @@
 package main
 
 import (
-
 	"apiserver/config"
 	"apiserver/model"
 	"apiserver/router"
@@ -54,8 +53,8 @@ func main() {
 	// Routes
 	router.Load(
 		g,
-		//middleware.Logging(),
-		middleware.RequestId(),
+		middleware.Logging(),
+		//middleware.RequestId(),
 		)
 	//Ping服务器以确保路由器正常工作
 	go func() {
